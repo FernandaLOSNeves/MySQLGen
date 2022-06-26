@@ -43,3 +43,16 @@ INSERT INTO tb_personagem(nome, reino, equipe, experiencia, classes_id)VALUES("L
 SELECT * FROM tb_personagem INNER JOIN tb_classes
 ON tb_classes.id = tb_personagem.classes_id;
 
+-- modificaçoes aqui 
+
+SELECT * FROM tb_personagem INNER JOIN tb_classes
+ON tb_classes.id = tb_personagem.classes_id WHERE experiencia > 6;
+
+SELECT * FROM tb_personagem INNER JOIN tb_classes
+ON tb_classes.id = tb_personagem.classes_id WHERE nivel > 8 && nivel < 30;
+
+SELECT * FROM tb_personagem 
+WHERE nome LIKE 'l%';
+
+SELECT * FROM tb_personagem INNER JOIN tb_classes
+ON tb_classes.id = tb_personagem.classes_id WHERE reino LIKE 'Narnia';
