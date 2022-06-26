@@ -43,4 +43,4 @@ DELETE FROM tb_funcio WHERE id = 3;
 -- foi aqui que eu relacionei as tabela
 -- cata a tabela tb funcio e junta com a tb setor, no tb setor id onde for igual o setor id da funcio 
 SELECT * FROM tb_funcio INNER JOIN tb_setor
-ON tb_setor.id = tb_funcio.setor_id;
+ON tb_setor.id = tb_funcio.setor_id;                          
