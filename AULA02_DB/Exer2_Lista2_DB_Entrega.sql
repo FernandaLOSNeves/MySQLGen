@@ -45,8 +45,5 @@ ON tb_categorias.id = tb_pizzas.categoria_id;
 SELECT * FROM tb_pizzas INNER JOIN tb_categorias
 ON tb_categorias.id = tb_pizzas.categoria_id WHERE tamanho LIKE 'grande';
 
-
-
-
-
-
+SELECT sabor_1, sabor_2, preco, tamanho FROM tb_pizzas INNER JOIN tb_categorias
+ON tb_categorias.id = tb_pizzas.categoria_id;
